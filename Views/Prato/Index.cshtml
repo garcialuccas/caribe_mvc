@@ -1,7 +1,11 @@
+@model List<caribe_mvc.Models.Prato>
+
 <body>
     <h1>Seja Bem-Vindo ao Caribe!!</h1>
 
-    <h2>Escolha um prato:</h2>
+    <h2>Escolha um prato: @ViewBag.TotalPratos pratos disponíveis</h2>
+
+    <a asp-controller="Prato" asp-action="Cadastro">Novo Prato</a>
 
     <table>
         <thead>
@@ -10,16 +14,32 @@
                 <th>Descrição</th>
                 <th>Preço</th>
                 <th>Disponível</th>
+                <th>Ações</th>
             </tr>
         </thead>
 
         <tbody>
-            <tr>
+            @* <tr>
                 <td>Virado à Paulista</td>
                 <td>Arroz, feijão engrossado com farinha, bisteca, ovo frito, couve e banana à milanesa.</td>
                 <td>R$ 45,00</td>
                 <td>Sim</td>
-            </tr>
+            </tr> *@
+            @foreach(Prato p in Model){
+                <tr>
+                    <td>@p.Nome</td>
+                    <td>@p.Descricao</td>
+                    <td>R$ @p.Preco</td>
+                    <td>@p.Disponivel</td>
+                    <td>
+                        <form asp-controller="Prato" method="post" asp-action="Excluir">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="id" value="@p.Id">
+                            <button type="submit">Excluir</button>
+                        </form>
+                    </td>
+                </tr>
+            }
         </tbody>
     </table>
 </body>

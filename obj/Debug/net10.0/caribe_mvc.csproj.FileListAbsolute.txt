@@ -129,7 +129,6 @@ C:\Users\54568203821\Desktop\atividades\caribe_mvc\obj\Debug\net10.0\rjsmcshtml.
 C:\Users\54568203821\Desktop\atividades\caribe_mvc\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\54568203821\Desktop\atividades\caribe_mvc\obj\Debug\net10.0\scopedcss\bundle\caribe_mvc.styles.css
 C:\Users\54568203821\Desktop\atividades\caribe_mvc\obj\Debug\net10.0\scopedcss\projectbundle\caribe_mvc.bundle.scp.css
-C:\Users\54568203821\Desktop\atividades\caribe_mvc\obj\Debug\net10.0\compressed\tv7j1rulsw-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\54568203821\Desktop\atividades\caribe_mvc\obj\Debug\net10.0\compressed\s4ssh2145a-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\54568203821\Desktop\atividades\caribe_mvc\obj\Debug\net10.0\compressed\mq4lsq9duc-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\54568203821\Desktop\atividades\caribe_mvc\obj\Debug\net10.0\compressed\03x73glf64-{0}-ahff09uru9-ahff09uru9.gz
@@ -145,3 +144,5 @@ C:\Users\54568203821\Desktop\atividades\caribe_mvc\obj\Debug\net10.0\refint\cari
 C:\Users\54568203821\Desktop\atividades\caribe_mvc\obj\Debug\net10.0\caribe_mvc.pdb
 C:\Users\54568203821\Desktop\atividades\caribe_mvc\obj\Debug\net10.0\caribe_mvc.genruntimeconfig.cache
 C:\Users\54568203821\Desktop\atividades\caribe_mvc\obj\Debug\net10.0\ref\caribe_mvc.dll
+C:\Users\54568203821\Desktop\atividades\caribe_mvc\obj\Debug\net10.0\caribe_mvc.sourcelink.json
+C:\Users\54568203821\Desktop\atividades\caribe_mvc\obj\Debug\net10.0\compressed\tv7j1rulsw-{0}-amyeat1pmv-amyeat1pmv.gz

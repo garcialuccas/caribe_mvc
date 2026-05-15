@@ -1,0 +1,28 @@
+<body>
+    <h1>Cadastrar Prato</h1>
+
+    <form action="" method="post">
+        <div>
+            <label for="">Nome do Prato</label>
+            <input type="text" name="nome" required>
+        </div>
+
+        <div>
+            <label for="">Descrição</label>
+            <input type="text" name="descricao">
+        </div>
+
+        <div>
+            <label for="">Preço</label>
+            <input type="text" name="preco">
+        </div>
+
+        <div>
+            <label for="">Disponível</label>
+            <input type="checkbox" name="disponivel">
+        </div>
+
+        <button type="submit">Salvar</button>
+    </form>
+    <a asp-controller="Prato" asp-action="Index">Voltar</a>
+</body>
