@@ -35,14 +35,12 @@ namespace caribe_mvc.Controllers
         public IActionResult Cadastro(Prato p)
         {
             string precoString = Request.Form["preco"].ToString().Replace(".", ",");
-            bool d = Request.Form["disponivel"].ToString() == "on" ? true : false;
+            p.Disponivel = Request.Form["disponivel"].ToString() == "on" ? true : false;
 
             if (decimal.TryParse(precoString, out var precoConvertido))
             {
                 p.Preco = precoConvertido;
             }
-
-            p.Disponivel = d;
 
             _repository.Adicionar(p);
 
@@ -50,9 +48,32 @@ namespace caribe_mvc.Controllers
         }
 
         [HttpPost]
-        public IActionResult Excluir(int id)
+        public IActionResult Excluir(int excluir_id)
         {
-            _repository.Excluir(id);
+            _repository.Excluir(excluir_id);
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public IActionResult Edicao(int edicao_id)
+        {
+            @ViewData["Title"] = "Edição";
+            ViewBag.P = _repository.AcharPrato(edicao_id);
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Edicao(Prato p, int edicao_id)
+        {
+            string precoString = Request.Form["preco"].ToString().Replace(".", ",");
+            p.Disponivel = Request.Form["disponivel"].ToString() == "on" ? true : false;
+
+            if (decimal.TryParse(precoString, out var precoConvertido))
+            {
+                p.Preco = precoConvertido;
+            }
+
+            _repository.Editar(p, edicao_id);
             return RedirectToAction("Index");
         }
     }

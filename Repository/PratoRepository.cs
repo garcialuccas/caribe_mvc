@@ -30,8 +30,27 @@ namespace caribe_mvc.Repository
 
         public void Excluir(int id)
         {
-            _context.Prato.Remove(_context.Prato.FirstOrDefault(x => x.Id == id));
+            var p = _context.Prato.FirstOrDefault(x => x.Id == id);
+            if (p == null) return;
+            _context.Prato.Remove(p);
             _context.SaveChanges();
+        }
+        public void Editar(Prato novo, int id)
+        {
+            var p = _context.Prato.FirstOrDefault(x => x.Id == id);
+            if (p == null) return;
+            p.Nome = novo.Nome;
+            p.Descricao = novo.Descricao;
+            p.Preco = novo.Preco;
+            p.Disponivel = novo.Disponivel;
+
+            _context.Prato.Update(p);
+            _context.SaveChanges();
+        }
+
+        public Prato AcharPrato(int id)
+        {
+            return _context.Prato.FirstOrDefault(x => x.Id == id)!;
         }
     }
 }

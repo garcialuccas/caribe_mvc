@@ -441,6 +441,7 @@ obj/Debug/net10.0/caribe_mvc.GeneratedMSBuildEditorConfig.editorconfig
 [additionalFiles]
 Views/Prato/
  Cadastro.cshtml
+ Edicao.cshtml
  Index.cshtml
 Views/Shared/
  _Layout.cshtml
@@ -452,6 +453,7 @@ Views/
 [dynamicFiles]
 Views/Prato/
  Cadastro.cshtml
+ Edicao.cshtml
  Index.cshtml
 Views/Shared/
  _Layout.cshtml

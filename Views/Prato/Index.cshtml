@@ -32,9 +32,15 @@
                     <td>R$ @p.Preco</td>
                     <td>@p.Disponivel</td>
                     <td>
-                        <form asp-controller="Prato" method="post" asp-action="Excluir">
+                        <form asp-controller="Prato" method="get" asp-action="Edicao">
                             @Html.AntiForgeryToken()
-                            <input type="hidden" name="id" value="@p.Id">
+                            <input type="hidden" name="edicao_id" value="@p.Id">
+                            <button type="submit">Editar</button>
+                        </form>
+
+                        <form asp-controller="Prato" method="post" asp-action="Excluir" onsubmit="return confirm('Deseja realmente excluir?');">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="excluir_id" value="@p.Id">
                             <button type="submit">Excluir</button>
                         </form>
                     </td>

@@ -1,25 +1,26 @@
 <body>
     <h1>Editar Prato</h1>
 
+    <h3>Prato Novo</h3>
     <form action="" method="post">
         <div>
             <label for="">Nome do Prato</label>
-            <input type="text" name="nome" required>
+            <input type="text" name="nome" required value="@ViewBag.P.Nome">
         </div>
 
         <div>
             <label for="">Descrição</label>
-            <input type="text" name="descricao">
+            <input type="text" name="descricao" value="@ViewBag.P.Descricao">
         </div>
 
         <div>
             <label for="">Preço</label>
-            <input type="text" name="preco">
+            <input type="text" name="preco" value="@ViewBag.P.Preco">
         </div>
 
         <div>
             <label for="">Disponível</label>
-            <input type="checkbox" name="disponivel">
+            <input type="checkbox" name="disponivel" checked="@ViewBag.P.Disponivel">
         </div>
 
         <button type="submit">Salvar</button>

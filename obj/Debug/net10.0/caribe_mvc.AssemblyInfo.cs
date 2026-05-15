@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("caribe_mvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a37949482c631317f87134c61901d1b5c06cf2d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92e70debbec5d2bfc3fe3ccdf938b3dd50f64ff0")]
 [assembly: System.Reflection.AssemblyProductAttribute("caribe_mvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("caribe_mvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
